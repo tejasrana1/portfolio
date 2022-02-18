@@ -1,38 +1,109 @@
+body html {
+  background-color: #191919;
+}
 .App {
+  background-color: #191919;
+  color: oldlace;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  justify-content: stretch;
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.NavBar {
+  font-family: "Montserrat", sans-serif;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+.content {
+  flex: 6;
+}
+.NavBar a {
+  display: block;
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.navLink {
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px;
+  transition: 700ms;
+  border-radius: 40px;
+}
+.logo {
+  zoom: 1;
+}
+.socialMedia {
+  margin-top: 20px;
+}
+.socialIcons {
+  cursor: pointer;
+  margin: 0 10px;
+}
+.socialIcons:hover {
+  color: #f30e5c;
+}
+
+.socialMedia a {
+  display: inline-block;
+}
+
+.active {
+  background-color: #2666cf;
+}
+.menuButton {
+  display: none;
+}
+.about {
+  width: 60%;
+  margin: auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (max-width: 1024px) {
+  .about {
+    width: 80%;
+  }
+  .navLink {
+    margin: 12px auto;
+  }
+  .socialMedia {
+    margin-top: 12px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 878px) {
+  .NavBar {
+    flex: 0;
+    width: 0;
+    transform: scale(0);
+    transform-origin: top;
   }
-  to {
-    transform: rotate(360deg);
+  .content {
+    width: 100vw;
+  }
+  .menuButton {
+    z-index: 1000;
+    display: block;
+    position: fixed;
+    top: 1%;
+    left: 5%;
+    transform: 500ms;
+  }
+  .menuButton:hover {
+    transform: scale(1.3);
+  }
+  .activeNav {
+    /* display: block; */
+    justify-content: center;
+    transition: 700ms;
+    flex: 6;
+    transform: scale(1);
   }
 }

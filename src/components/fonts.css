@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "cafeBrew";
+  src: url("../assets/fonts/cafe\ brewery\.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sensation";
+  src: url("../assets/fonts/Sansation-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "dosis";
+  src: url("../assets/fonts/DosisLight-3jdp.ttf") format("truetype");
+}
+@import url("https://fonts.googleapis.com/css2?family=Redressed&display=swap");
+.cafe {
+  font-family: "Redressed", cursive;
+  font-weight: lighter;
+  font-size: 4rem;
+  color: cyan;
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.sensation {
+  /* width: 60%; */
+  font-weight: lighter;
+  margin: 50px auto;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  font-size: 1.4rem;
+}
+
+.dosis {
+  display: inline-block;
+  font-size: 1.8rem;
+  cursor: pointer;
+  font-family: "dosis";
+}
+.about .dosis {
+  font-size: 2rem;
+  font-weight: bold;
+  transition: 200ms;
+  color: white;
+}
+.about .dosis:hover {
+  transform: scale(1.1);
+  color: #f30e5c;
+}

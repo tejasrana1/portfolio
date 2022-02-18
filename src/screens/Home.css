@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
+.mainHead {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+  font-size: 5rem;
+  transition: 500ms;
+  cursor: default;
+}
+
+@media only screen and (max-width: 1024px) {
+  .mainHead {
+    font-size: 3.8rem;
+  }
+}
+@media only screen and (max-width: 455px) {
+  .mainHead {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .mainHead {
+    font-size: 2.5rem;
+  }
+}
+
+/* button:hover {
+  animation: animate 0.8s;
+}
+
+@keyframes animate {
+  25% {
+    transform: scale(0.8, 1.3);
+  }
+  50% {
+    transform: scale(1.1, 0.8);
+  }
+  75% {
+    transform: scale(0.7, 1.2);
+  }
+} */

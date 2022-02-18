@@ -1,0 +1,90 @@
+.form {
+  margin-top: 10%;
+  width: 40%;
+  background-color: #2c3333;
+  border-radius: 20px;
+  padding: 50px;
+  display: inline-block;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.5), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+@media only screen and (max-width: 880px) {
+  .form {
+    width: 70%;
+  }
+}
+input,
+textarea {
+  font-family: monospace;
+  font-size: 1rem;
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  outline: none;
+  margin: 10px;
+}
+.form button {
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  width: 50%;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 200ms;
+}
+.form button:hover {
+  transform: scale(1.1);
+  background-color: #f30e5c;
+  color: white;
+}
+
+/* .social {
+  border-radius: 20px;
+  background-color: black;
+  width: 130px;
+  position: fixed;
+  top: 50%;
+  left: 70%;
+  display: inline-block;
+  cursor: pointer;
+  transform-origin: top bottom;
+}
+.toggled {
+  height: 0;
+  width: 0;
+  transform: scale(0);
+  transition: 500ms ease;
+  transform-origin: top bottom;
+}
+
+.activeMedia {
+  height: 200px;
+  width: 130px;
+  transform-origin: top;
+  transform: scale(1);
+  transition: 500ms;
+  transform-origin: top bottom;
+}
+.toggled .icons {
+  transform: scale(0);
+  transition: 1s;
+  margin: 20px;
+}
+
+.activeMedia .icons:nth-child(1) {
+  transition-delay: 0;
+  transform: scale(1);
+}
+.activeMedia .icons:nth-child(2) {
+  transition-delay: 120ms;
+  transform: scale(1);
+}
+.activeMedia .icons:nth-child(3) {
+  transition-delay: 240ms;
+  transform: scale(1);
+}
+.activeMedia .icons:nth-child(4) {
+  transition-delay: 360ms;
+  transform: scale(1);
+} */
